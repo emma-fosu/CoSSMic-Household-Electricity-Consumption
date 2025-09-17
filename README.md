@@ -1,7 +1,7 @@
 # 📊 CoSSMic Electricity Consumption Analysis Dashboard
 _A dashboard to uncover patterns in household electricity consumption and provide actionable recommendations for sustainable energy use._
 
-![Screen Recording 2025-09-15 153537](https://github.com/user-attachments/assets/75af11da-f3c0-4e57-9451-bdd1d42abd81)
+![Dashboard Preview](assets/dashboard.gif)
 ---
 
 ## 📑 Table of Contents
@@ -9,7 +9,6 @@ _A dashboard to uncover patterns in household electricity consumption and provid
 - [Key Questions Addressed](#key-questions-addressed)  
 - [Dataset](#dataset)  
 - [Methodology](#methodology)  
-- [Tools & Technologies](#tools--technologies)  
 - [Key Findings](#key-findings)  
 - [Recommendations](#recommendations)  
 - [Challenges & Solutions](#challenges--solutions)  
@@ -50,17 +49,11 @@ The goal is to identify opportunities for reducing wastage and optimizing energy
 4. **Modeling (Optional Extension)**  
    - Built a forecasting model using ARIMA to predict daily consumption.  
 
-## Tools & Technologies
-- **Programming**: Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)  
-- **Visualization**: Power BI, Tableau, Matplotlib  
-- **Other**: Jupyter Notebook, GitHub for version control  
-
 ## Key Findings
 - **Peak Consumption**: Highest between 6 PM – 10 PM, coinciding with cooking and household activities.  
 - **Seasonal Trends**: Winter consumption was ~30% higher due to heating needs.  
 - **Wastage**: Sub-meter readings indicated standby power accounted for ~12% of daily usage.  
 
-![Consumption Trends](visuals/consumption_trends.png)  
 
 ## Recommendations
 - Shift non-essential appliance use (laundry, dishwashing) to off-peak hours to reduce costs.  
@@ -82,11 +75,15 @@ The goal is to identify opportunities for reducing wastage and optimizing energy
 - **Pivot tables** with computed measures and formatting to analyse electricity consumption. 
 - **Pivot charts** to visualize time series electricity consumption and appliance usage.
 
-  
+![Power Query Workflow Preview](assets/power_query.gif)
+*A snapshot of power query steps used to clean the data.*
+
 
 ## Dataset
 - **Source**: A time series collected by CoSSMic (Collaborating Smart Solar-powered Microgrids). The dataset can be found [here](https://data.open-power-system-data.org/household_data/).
-- **Schemas**:
+- <details>
+   <summary style="font-weight: bold">Schemas:</summary>
+   
      - utc_timestamp
        - Type: datetime
        - Format: fmt:%Y-%m-%dT%H%M%SZ
@@ -215,6 +212,7 @@ The goal is to identify opportunities for reducing wastage and optimizing energy
    * DE_KN_residential6_washing_machine
        - Type: number (float)
        - Description: Washing machine energy consumption in a residential building, located in the urban area in kWh
+   </details>
 - **Challenges**:
    - Multiple missing values after the interpolation.
    - Noisy readings and huge gaps from subsequent records. 
