@@ -13,7 +13,7 @@ _A dashboard to uncover patterns in household electricity consumption and provid
 - [Dataset](#dataset)  
 - [Project Structure](#project-structure)  
 - [How to Run the Project](#how-to-run-the-project)    
-- [contact Me](#contact-me)
+- [Contact Me](#contact-me)
 
 ## Project Overview
 Household electricity consumption has a direct impact on both cost savings and environmental sustainability. 
