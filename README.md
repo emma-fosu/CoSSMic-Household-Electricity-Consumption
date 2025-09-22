@@ -7,13 +7,13 @@ _A dashboard to uncover patterns in household electricity consumption and provid
 ## 📑 Table of Contents
 - [Project Overview](#project-overview)  
 - [Key Questions Addressed](#key-questions-addressed)  
-- [Dataset](#dataset)  
-- [Methodology](#methodology)  
 - [Key Findings](#key-findings)  
+- [Methodology](#methodology)  
 - [Skills Showcased](#skills-showcased)  
+- [Dataset](#dataset)  
 - [Project Structure](#project-structure)  
 - [How to Run the Project](#how-to-run-the-project)    
-- [About Me](#about-me)
+- [contact Me](#contact-me)
 
 ## Project Overview
 Household electricity consumption has a direct impact on both cost savings and environmental sustainability. 
@@ -35,6 +35,7 @@ The goal is to identify opportunities for reducing wastage and optimizing energy
 3. Heat Pumps is rarely used during the summer and autumn season but during the winter season, it dominates by consuming **67% - 72%** of the total electricity.
 4. During winter, peak Consumption was observed during **3 am - 4 am** and **5 pm - 6pm** and fairly during stable during the rest of the year.
 
+## Methodology
 1. **Data Cleaning & Preparation (with Power Query)**   
    - Columns relating to industrial areas and public infrastructure were removed.
    - The columns were indexed with **Power Query index creator**.
