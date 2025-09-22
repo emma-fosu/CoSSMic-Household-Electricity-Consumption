@@ -218,7 +218,7 @@ CossMic-Household-Electricity-Consumption/
 This project can be downloaded locally in two ways:
 1. Clone the repository with git:
    ```powershell
-   git clone https://github.com/your-username/energy-consumption-analysis.git
+   git clone https://github.com/emma-fosu/CoSSMic-Household-Electricity-Consumption.git
    ```  
    *In order to use this command, you have to get [Git](https://git-scm.com/downloads) installed*
 2. Donwloading and unziping from GitHub:
