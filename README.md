@@ -1,4 +1,4 @@
-# 📊 CoSSMic Electricity Consumption Analysis Dashboard
+# CoSSMic Household Electricity Consumption Analysis
 _A dashboard to uncover patterns in household electricity consumption and provide actionable recommendations for sustainable energy use._
 
 ![Dashboard Preview](assets/dashboard.gif)
