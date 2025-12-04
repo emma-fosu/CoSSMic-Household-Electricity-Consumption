@@ -1,10 +1,10 @@
-# 📊 CoSSMic Electricity Consumption Analysis
+# CoSSMic Electricity Consumption Analysis
 _A dashboard to uncover patterns in household electricity consumption and provide recommendations for sustainable energy use._
 
 ![Dashboard Preview](assets/dashboard.gif)
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 - [Project Overview](#project-overview)  
 - [Key Questions Addressed](#key-questions-addressed)  
 - [Key Findings](#key-findings)
@@ -34,25 +34,35 @@ This project explores the consumption patterns of 11 households in southern Germ
 
 ## Key Findings
 *These key findings are based mostly on 2016 electricity consumption*.
-1. **SElectricity Consumption Peaks and Valleys throughout Seasons.**  
-Electricity consumption varies dramatically across the year. It peaks in winter (Nov–Jan), then gradually decreases through late winter to early spring.   
-<img src="/assets/electricity_consumption_1.png"/>   
-In April, it drops sharply by **40%** compared to March, reaching its lowest point in summer (**78%** below the beginning of the year). From September onwards, consumption slowly increases, with a spike from autumn to early winter, reaching **three times** what was consumed in August.
-2. Electriciy consumption during the day seems to be fairly constant throughout the day. There may be peaks at somedays at different times because maybe someone may using the washer to wash some clothes or turn on the heat pump after coming back from a reacreational place. But it is ob ious that electricity conusmption during the day in winter is higher than that of summer and autumn wit peaks often noticed around 4am - 5 pm, 10 am  and after sunset.
-3. Heat Pump dominates in winter but fairly competes with the other any other day.
-   During the winter heat pump accounted for 72% with circulation pump coming next. But during spring and autum it competes with the others in 24% usage followed by dishwasher and washing machinge. This indicates that the spike in electricity usage during winter is dominated caused the increase in heat pump usage to cool their houses.
-4. Solar PV Electricity Generated surpasses electricity demand and sometimes electricity supplied by grid during summer, and autumn.
- during March, it was first noticed pv electricity generated surpasses the demand by 82% and continues for the next 4 months averaging a 370 % more with its highest in July (910%). It is surprising that this electricity is wasted and it is never used by the household or incase of emergency shutdown they are used. This analyses has shown what solar electricity energy can contribute and fortunately solar power generation is more likely to be predicted throughout the year but the issue is the uncertainty of human behaviour and when it is need most of the energy. That is where solar electricity cannot handle instantaneously and way should be made to make retify such to use solar effectively during this period.
- 5. Solar Electiricity is more likely predictable throughout the year.
-Throught the year solar electricity generated peaks around noons by steadily increaseing from 8 in the morning and to noon and decrease after 3 pm to sunset. Meanwhile the magnitude of the solar electricity generate differs from time to time with the highest in July.
-6. Electricity consumption and solar Energy Generated trends behave like a two oppositie parabolic curves with big gap in the center. During winter solar electricity generated is far lower than the daman and it increases as to it peak in July surpasing the damand by 910% with demand moving similarly. deamand picks up momemtum to the end of the year with solar electricity generated no near to cater for the demand. 
+1. **Electricity Consumption Peaks and Valleys throughout Seasons.**  
+   Electricity consumption varies dramatically across the year. It peaks in winter (Nov–Jan), then gradually decreases through late winter to early spring.   
+   <img src="/assets/electricity_consumption_1.png"/>       
+   In April, it drops sharply by **40%** compared to March, reaching its lowest point in summer (**78%** below the beginning of the year). From September onwards, consumption slowly increases, with a spike from autumn to early winter, reaching **three times** what was consumed in August.
+2. **Daily Electricity Patterns Remain Stable but Peak in Winter.**  
+   Electricity use throughout the day is generally consistent. Occasional peaks occur likely when appliances like the dish washer or heat pump are in use. Winter consumption is clearly higher than in summer and autumn, with noticeable peaks around **4–5 AM**, **10 AM**, and after sunset.
+3. **Heat Pumps Dominate Winter Energy Use.**   
+   The heat pump is the primary driver of winter electricity consumption, accounting for 72%, with the circulation pump next in line.   
+   <img src="/assets/appliances.gif" />    
+   During spring and autumn, the heat pump competes with other appliances, contributing around 24%, alongside the dishwasher and washing machine. This indicates that winter spikes are largely due to heating needs.
+4. **Solar PV Generation Exceeds Demand in Summer and Autumn.**   
+   Solar electricity generation surpasses household demand and sometimes grid import during summer and autumn. Starting in March, PV generation exceeded demand by **82%**, averaging **370%** above demand over the next four months, with a peak of **910%** in July.   
+   <img src="/assets/solar_season.png" />   
+    Much of this surplus is wasted, highlighting the untapped potential of solar energy. Effective storage or flexible usage strategies could maximize this energy during peak generation periods.
+5. **Solar Electricity is Highly Predictable Throughout the Day.**   
+   Solar PV generation follows a consistent daily pattern: it rises from **8 AM** to noon and falls after **3 PM** until sunset. While the timing is predictable, the magnitude varies seasonally, with the highest output in **July**.
+6. **Electricity Demand and Solar Generation Follow Opposite Trends.**
+   Electricity consumption and solar generation behave like two opposing parabolic curves. In winter, solar generation is far below demand, while in July it surpasses demand by **910%**. Demand increases toward the end of the year, but solar generation cannot meet it, emphasizing the need for alternative energy sources or storage solutions to bridge the gap. 
 
 
 ## Recommendations
-1. pv electricity connected to some low-power appliances.
-2. hybrid electricity consumption
-3. 
-
+1. **Implement Hybrid Electricity Management with Smart Switching:**   
+   Introduce a hybrid electricity system with automated switching: the system prioritizes PV solar electricity when generation is high and seamlessly draws from the grid only when solar is insufficient.
+2. **Connect PV Solar Electricity to Low-Power Appliances:**   
+   Directly connect PV-generated electricity to Low-power appliances (LED lights, fans, chargers, small pumps) which are ideal for consuming this surplus energy without affecting household operations.
+3. **Implement Energy Storage or Demand-Shifting Strategies:**   
+   Invest in battery storage systems to store excess solar energy during high-generation months for use in winter or during peak demand periods.
+   Alternatively, implement demand-shifting strategies, such as scheduling flexible appliances (washing machines, dishwashers, chargers) to run during peak solar generation hours (8 AM–3 PM), maximizing self-consumption and reducing grid dependency.
+   
 ## Dataset
 - **Source**: A time series collected by CoSSMic (Collaborating Smart Solar-powered Microgrids). The dataset can be found [here](https://data.open-power-system-data.org/household_data/).
 
